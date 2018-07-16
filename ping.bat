@@ -1,4 +1,6 @@
 @echo off
+REM Change the range to match what you want to scan below
+set RANGE=10.10.11
 goto check_Permissions
 
 :check_Permissions
@@ -12,7 +14,6 @@ goto check_Permissions
 		pause
 		exit /B 1
 	)
-set RANGE=10.10.11
 echo This is your range: %RANGE% (it might take a while)
 set CURRENTDIRECTORY=%~dp0
 set FILELOCATION=%CURRENTDIRECTORY%ipaddresses.txt
